@@ -1,0 +1,81 @@
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.socialIcon:hover {
+  transform: translateY(-3px);
+}
+
+/* Sizes */
+.small .socialIcon {
+  width: 32px;
+  height: 32px;
+  font-size: 1rem;
+}
+
+.medium .socialIcon {
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+}
+
+.large .socialIcon {
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+}
+
+/* Colors */
+.default .socialIcon {
+  color: var(--dark-color);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.default .socialIcon:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.primary .socialIcon {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.primary .socialIcon:hover {
+  background-color: var(--primary-dark);
+}
+
+.secondary .socialIcon {
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+.secondary .socialIcon:hover {
+  background-color: var(--secondary-dark);
+}
+
+.dark .socialIcon {
+  color: white;
+  background-color: var(--dark-color);
+}
+
+.dark .socialIcon:hover {
+  background-color: var(--darker-color);
+}
+
+.light .socialIcon {
+  color: var(--dark-color);
+  background-color: white;
+}
+
+.light .socialIcon:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}

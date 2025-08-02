@@ -1,0 +1,19 @@
+.home {
+  padding-top: 80px; /* To account for fixed header */
+}
+
+/* Smooth scrolling behavior for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section spacing */
+section {
+  padding: 6rem 0;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 4rem 0;
+  }
+}

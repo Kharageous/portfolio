@@ -1,0 +1,112 @@
+.portfolioItem {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+
+  border: 2px solid red;
+  padding: 5px;
+}
+
+.portfolioItem:hover {
+  transform: translateY(-5px);
+}
+
+.portfolioImage {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.portfolioImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolioItem:hover .portfolioImage img {
+  transform: scale(1.05);
+}
+
+.portfolioOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 77, 90, 0.8),
+    rgba(43, 45, 66, 0.9)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 1.5rem;
+}
+
+.portfolioItem:hover .portfolioOverlay {
+  opacity: 1;
+}
+
+.overlayContent {
+  text-align: center;
+  color: white;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.portfolioItem:hover .overlayContent {
+  transform: translateY(0);
+}
+
+.overlayContent h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.overlayContent p {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.techTags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.techTags span {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.portfolioLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.linkButton {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: var(--primary-color);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.linkButton:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+}

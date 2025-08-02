@@ -1,0 +1,142 @@
+.contact {
+  background-color: white;
+}
+
+.contactContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.contactInfo {
+  background-color: var(--light-bg);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.infoTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark-color);
+}
+
+.infoText {
+  color: var(--gray-color);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.infoItem {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.infoItem i {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-top: 0.3rem;
+}
+
+.infoItem h4 {
+  margin: 0 0 0.3rem 0;
+  color: var(--dark-color);
+  font-size: 1rem;
+}
+
+.infoItem a,
+.infoItem p {
+  color: var(--gray-color);
+  margin: 0;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.infoItem a:hover {
+  color: var(--primary-color);
+}
+
+.socialSection {
+  margin-top: 2rem;
+}
+
+.socialSection h4 {
+  margin-bottom: 1rem;
+  color: var(--dark-color);
+}
+
+.contactForm {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(255, 77, 90, 0.1);
+}
+
+.formGroup textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submitButton {
+  width: 100%;
+}
+
+.message {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.message.success {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+}
+
+.message.error {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+@media (max-width: 768px) {
+  .contactContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .contactInfo {
+    order: 2;
+  }
+
+  .contactForm {
+    order: 1;
+  }
+}
