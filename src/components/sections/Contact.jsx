@@ -27,14 +27,19 @@ const Contact = ({ id }) => {
     setIsSubmitting(true);
     setMessage({ text: "", type: "" });
 
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycby2ovmkZhZGtoL3R3ZxQb32ShfZgCBWSTSpJR0tMLloL0Cw64tsXepWUAOKxnO9oaUKyg/exec";
+
+    const formPayload = new FormData();
+    formPayload.append("name", formData.name);
+    formPayload.append("email", formData.email);
+    formPayload.append("subject", formData.subject);
+    formPayload.append("message", formData.message);
+
     try {
-      // Replace with your actual form submission logic
-      const response = await fetch("https://your-form-endpoint.com", {
+      const response = await fetch(scriptURL, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+        body: formPayload,
       });
 
       if (response.ok) {
