@@ -28,7 +28,7 @@ const Contact = ({ id }) => {
     setMessage({ text: "", type: "" });
 
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycby2ovmkZhZGtoL3R3ZxQb32ShfZgCBWSTSpJR0tMLloL0Cw64tsXepWUAOKxnO9oaUKyg/exec";
+      "https://script.google.com/macros/s/AKfycbyTqiTZqwGUvKn3RLPIkk6Klzu20zAwrXhrGzjSs4gnXG8kNM70bZJw-QYFfPs01LqVbQ/exec";
 
     const formPayload = new FormData();
     formPayload.append("name", formData.name);
