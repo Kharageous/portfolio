@@ -4,7 +4,26 @@ import portImage from "../assets/images/portImage.png";
 import medCare from "../assets/images/medCare.png";
 import silverCrest from "../assets/images/silverCrest.png";
 import nikeclone from "../assets/images/nikeclone.png";
+import cryptoEscapeImage from "../assets/images/escaperoom.png"
 const portfolioData = [
+  {
+  title: "Crypto-Escape Room",
+  description: "Interactive educational platform where users solve cryptographic puzzles to progress through virtual escape rooms.",
+  image: cryptoEscapeImage, // Import your project image
+  technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Crypto-JS"],
+  tags: ["web", "education", "gaming", "cryptography"],
+  features: [
+    "5 Interactive cryptographic puzzles (Caesar Cipher, RSA, Steganography, etc.)",
+    "Real-time progress tracking & scoring system",
+    "Interactive cryptographic terminal with command-line interface",
+    "Educational overlays explaining cryptographic concepts",
+    "Achievement system with notifications",
+    "Responsive design with crypto-themed UI",
+    "Timer-based gameplay with hints system"
+  ],
+  liveUrl: "https://crypto-escape-room.vercel.app",
+  codeUrl: "https://github.com/Kharageous/crypto-escape-room"
+},
   {
     title: "Amautobuy E-commerce Platform",
     description: "automotive parts e-commerce platform.",
@@ -12,7 +31,7 @@ const portfolioData = [
     technologies: ["React", "Node.js", "MongoDB", "Redis"],
     tags: ["web", "ecommerce"],
     liveUrl: "https://amautobuy.com",
-    codeUrl: "https://github.com/yourusername/amautobuy",
+    codeUrl: "https://github.com/Kharageous/amautobuy",
   },
   {
     title: "Medcare",
@@ -22,7 +41,7 @@ const portfolioData = [
     technologies: ["React", "Firebase", "Tailwind CSS", "Framer Motion"],
     tags: ["web"],
     liveUrl: "https://med-care-six.vercel.app/", // Replace with actual live link
-    codeUrl: "https://github.com/yourusername/medcare", // Replace with actual repo
+    codeUrl: "https://github.com/Kharageous/MedCare", // Replace with actual repo
   },
 
   {
@@ -42,7 +61,7 @@ const portfolioData = [
     technologies: ["HTML", "CSS", "JavaScript"],
     tags: ["web"],
     liveUrl: "https://kharageous.github.io/SilverCrest/", // Replace with your actual GitHub Pages URL
-    codeUrl: "https://github.com/yourusername/SilverCrest",
+    codeUrl: "https://github.com/Kharageous/SilverCrest",
   },
 
   // Project info object
@@ -54,7 +73,7 @@ const portfolioData = [
     technologies: ["React", "Redux", "Firebase", "Stripe"],
     tags: ["web", "e-commerce"],
     liveUrl: "https://nike-clone-beta.vercel.app/",
-    codeUrl: "https://github.com/yourusername/NikeClone",
+    codeUrl: "https://github.com/Kharageous/NikeClone",
   },
 
   {
@@ -65,7 +84,7 @@ const portfolioData = [
     technologies: ["Vue.js", "Node.js", "MySQL"],
     tags: ["web"],
     liveUrl: "https://restaurant-booking-demo.com",
-    codeUrl: "https://github.com/yourusername/restaurant-booking",
+    codeUrl: "https://github.com/Kharageous/restaurant-booking",
   },
 ];
 
